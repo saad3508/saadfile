@@ -1,0 +1,191 @@
+print("Hello, World!")
+MYNAME=input()
+myaddrees=input()
+myage=input()
+print("My name is",MYNAME)
+print("My address is",myaddrees)
+print("My age is",myage)
+a=10
+b=20
+if b%a ==0:
+ print(a+b)
+else:
+ print("ntg")
+print("syed","saad","syed",sep="-",end="!")
+
+s="Saad Syed"
+print(s)
+print(s[-3])
+print(s[1])
+print(type(s))
+
+
+b=["saad","syed",2,3,4,33,'s']
+
+print(b)
+print(b[-3])
+print(b[-10])
+
+t1=(2,3,4,5)
+t2=()
+t2=tuple(1)
+
+boolean
+print(type(True))
+print(type(true))
+
+SET
+a=set("helloworldprogram")
+b=set(["hello","worldprogram","hello"])
+
+a.add("newadd")
+b.add("newadd")
+print (a)
+print(b)
+frozen set
+
+c=frozenset("helloworldprogram")
+d=frozenset(["hello","worldprogram","hello"])
+
+print (c)
+print(d)
+c.add("newadd")
+d.add("newadd")
+
+
+slicing
+a="           _______revaTuRe is located in chennai______________________       "
+print(a)
+print(a[1:4].upper())
+print(a.title())
+print(a.capitalize())
+print(a.swapcase())
+print(a.isalpha())
+print(a.strip())
+print(a.lstrip())
+print(a.rstrip())
+print(a.lstrip("_"))# Removes leading underscores
+print(a.strip(" _"))# Removes leading & trailing underscores
+
+
+dictionary
+a={"name":"saad","age":23,"salary":"1L"}
+print(a)
+print(a["age"])
+
+
+BINARY
+a=[65,66,67]
+print(a)
+
+c=bytes([65,66,67])
+print(c)
+
+Nonetype
+x=None
+print(type(y))
+print(type(x))
+y
+print(y)
+print(type(y))
+
+
+a=int(input())
+if(a>=90):
+ print("A")
+elif(a>=70 and a<90):
+ print("B")
+elif(a>=60 and a<70):
+ print("c")
+else:
+ print("fail")
+
+reverse a string
+s="daad"
+rs=""
+for i in range(len(s)):
+    rs=s[i]+rs
+
+print(rs)
+if(rs==s):
+    print("palindrome")
+else:
+    print("not a palindrome")
+
+eo=int(input())
+if eo%2 ==0:
+   print("even")
+else:
+   print("odd")
+
+
+import math
+e=int(input())
+b=False
+if e<2:
+ b=True
+else:
+ for i in range(2,int(math.sqrt(e))+1):
+    if(e%i==0):
+        b=True
+        break
+if(b):
+     print("not prime")
+    
+else:
+   print("prime")
+
+
+fibonacci series
+a,b=0,1
+print(a)
+print(b)
+c=0
+for i in range (1,10):
+    c=a+b
+    print(c)
+    a=b
+    b=c
+
+def fun(**details):
+    for key,val in details.items():
+        print(key+"-"+str(val))
+fun(name="saad",age=23,passout="2024")
+import array
+fruit =array.array('i',[1,2,3,4])
+print(len(fruit))
+print(fruit[2])
+for f in fruit:
+    print(f)
+
+
+inbuit sorted
+import array
+a=array.array('i',[1,10,-3,4])
+b=sorted(a)
+print(a)
+print(b)
+
+list methods
+list =["apple","mango","banana","mango","papaya","aaa"]
+list.append("pineapple")
+list.insert(0,"watermelon")
+print(list)
+
+list.remove("papaya")
+list.pop()
+print(list)
+
+list.sort()
+print(list)
+list.reverse()
+print(list)
+
+list2=list.copy()
+print(list2)
+list2.clear()
+print(list2)
+
+print(list)
+print(list.index("mango"))
+print(list.count("mango"))
