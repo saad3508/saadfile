@@ -1,0 +1,67 @@
+create database db1;
+use db1;
+CREATE TABLE example (
+    id INT PRIMARY KEY,
+    name VARCHAR(100)
+    
+);
+INSERT INTO example (id, name) VALUES (1, 'John Doe');
+INSERT INTO example (id, name) VALUES (2, 'bob');
+INSERT INTO example (id, name) VALUES (3, 'joy');
+INSERT INTO example (id, name) VALUES (4, 'alice');
+INSERT INTO example (id, name) VALUES (5, 'kAmAl gAniki');
+SELECT * FROM example;
+SHOW databases;
+SHOW tables;
+
+create table Revature(
+userid int auto_increment primary key,
+username varchar(50) unique not null,
+email varchar(50) UNIQUE NOT NULL,
+passwordhash varchar(50) unique not null,
+firstname varchar(50),
+lastname varchar(50),
+dob date,
+createdate datetime default current_timestamp,
+lastlogin datetime default current_timestamp,
+status enum('active','inactive','suspend') default 'active',
+index(email)
+);
+
+insert into Revature1 (userid,username,email,passwordhash,firstname,lastname,dob,lastlogin)values(1,'saad','s.saadbme@gmail.com','12345','syed','saad','2001-11-19','2025-04-07 15:30:00') ;
+select * from Revature;
+drop table Revature1;
+create table Revature1(
+id int primary key ,
+name varchar(50),
+age INT, check (age>18)
+);
+
+CREATE TABLE enrollments (
+    coursename INT,
+    id INT,
+    courseid INT,
+    FOREIGN KEY (id) REFERENCES students(id)
+);
+insert into Revature1 (id,name,age)values(1,'saad','23');
+insert into Revature1 (id,name,age)values(2,'saadd','23');
+insert into Revature1 (id,name,age)values(3,'saa','23');
+
+select * from enrollments,Revature1;
+
+CREATE TABLE enrollments (
+    coursename INT,
+    id INT,
+    courseid INT,
+    FOREIGN KEY (id) REFERENCES students(id)
+);
+CREATE TABLE employee (
+    coursename int,
+    id INT,
+    courseid INT,
+    primary key(id,courseid)
+);
+insert into Revature1 (coursename,id,courseid)values(1,'saad','23');
+insert into Revature1 (coursename,id,courseid)values(2,'saad','23');
+insert into Revature1 (coursename,id,courseid)values(1,'saad','2');
+
